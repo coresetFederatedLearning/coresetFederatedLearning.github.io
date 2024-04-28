@@ -91,11 +91,11 @@
           <h1 class="title is-1 publication-title">Bayesian Coreset Optimization for Personalized Federated Learning</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Prateek CHanda</a><sup>1</sup>,</span>
+              <a href="https://prateekiiest.github.io/">Prateek Chanda</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://utkarshsinha.com">Shrey Modi</a><sup>1</sup>,</span>
+              <a href="https://in.linkedin.com/in/shrey-modi-b059941bb">Shrey Modi</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://jonbarron.info">Ganesh Ramakrishnan</a><sup>1</sup>,
+              <a href="https://www.cse.iitb.ac.in/~ganesh/">Ganesh Ramakrishnan</a><sup>1</sup>,
             </span>
           </div>
 
@@ -125,15 +125,6 @@
                 </a>
               </span>
               <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
               <!-- Code Link. -->
               <span class="link-block">
                 <a href="https://github.com/google/nerfies"
@@ -144,17 +135,8 @@
                   <span>Code</span>
                   </a>
               </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a>
+              <!-- Dataset Link. -->    
             </div>
-
           </div>
         </div>
       </div>
@@ -168,6 +150,8 @@
       <h2 class="subtitle has-text-centered">
         <span class="dnerf">Abstract
       </h2>
+      In a distributed machine learning setting like Federated Learning where there are multiple clients involved which update their individual weights to a single central server, often training on the entire individual client's dataset for each client becomes cumbersome. To address this issue we propose $\methodprop$: a personalized coreset weighted federated learning setup where the training updates for each individual clients are forwarded to the central server based on only individual client coreset based representative data points instead of the entire client data. Through theoretical analysis we present how the average generalization error is minimax optimal up to logarithm bounds (upper bounded by $\mathcal{O}(n_k^{-\frac{2 \beta}{2 \beta+\boldsymbol{\Lambda}}} \log ^{2 \delta^{\prime}}(n_k))$) and lower bounds of $\mathcal{O}(n_k^{-\frac{2 \beta}{2 \beta+\boldsymbol{\Lambda}}})$, and how the overall generalization error on the data likelihood differs from a vanilla Federated Learning setup as a closed form function ${\boldsymbol{\Im}}(\boldsymbol{w}, n_k)$ of the coreset weights $\boldsymbol{w}$ and coreset sample size $n_k$. 
+Our experiments on different benchmark datasets based on a variety of recent personalized federated learning architectures show significant gains as compared to random sampling on the training data followed by federated learning, thereby indicating how intelligently selecting such training samples can help in performance. Additionally, through experiments on medical datasets our proposed method showcases some gains as compared to  other submodular optimization based approaches used for subset selection on client's data.
     </div>
   </div>
 </section>
